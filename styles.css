@@ -1,0 +1,72 @@
+/* General Body styling */
+body {
+    background-image: url('stars.gif');
+    background-size: 200px;
+    background-repeat: repeat;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: white;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Center box with message */
+.center-box {
+    margin: 20px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+/* Flex container for layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+/* Left and right ASCII art boxes */
+.ascii-box {
+    width: 30%;
+    border: 2px solid #000;
+    padding: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    height: 300px;
+    overflow-y: auto;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+/* Webamp container */
+#app {
+    width: 35%;
+    height: 50vh;
+}
+
+/* Mobile view - Hide ASCII art boxes */
+@media (max-width: 768px) {
+    .ascii-box {
+        display: none; /* Hide ASCII art boxes on mobile */
+    }
+
+    .container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center;
+    }
+
+    #app {
+        width: 100%; /* Make Webamp player take full width on mobile */
+        height: 40vh; /* Adjust Webamp player height for mobile */
+    }
+}

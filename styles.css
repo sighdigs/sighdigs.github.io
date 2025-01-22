@@ -28,7 +28,6 @@ header {
     padding: 0 70px; /* Adds 70px padding to both left and right */
     background-color: transparent;
     font-size: 20px;
-    max-width: calc(100% - 200px); /* Ensure the box doesn't extend beyond 70px margin on both sides */
 }
 
 /* Highlight text styling */

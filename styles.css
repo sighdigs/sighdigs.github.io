@@ -7,6 +7,9 @@ body {
     font-family: 'Courier New', Courier, monospace !important;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height of the screen */
 }
 
 /* Header styling */
@@ -21,9 +24,15 @@ header {
 
 /* Center box with message */
 .center-box {
-    margin: 20px;
+    margin: 20px auto; /* 20px top and bottom, auto to center horizontally */
+    padding: 0 70px; /* Adds 70px padding to both left and right */
     background-color: transparent;
     font-size: 20px;
+    max-width: calc(100% - 600px); /* Ensure the box doesn't extend beyond 70px margin on both sides */
+}
+.highlight {
+    font-size: calc(20px + 10px); /* Increase font size by 8px */
+    font-weight: bold; /* Make the text bold */
 }
 
 /* Flex container for layout */
@@ -32,7 +41,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    min-height: 80vh;
+    flex-grow: 1; /* Take up remaining space */
 }
 
 /* Left and right ASCII art boxes */
@@ -54,6 +63,40 @@ header {
     height: 50vh;
 }
 
+        .subpages {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .subpages ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+
+        .subpages ul li {
+            margin: 10px 0; /* Space between each list item */
+        }
+
+        .subpages ul li a {
+            font-size: 18px; /* Adjust font size */
+            font-weight: bold;
+        }
+
+        .subpages ul li a:hover {
+            color: #0056b3; /* Hover color */
+        }
+
+/* Bottom Box styling */
+.bottom-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 5px;
+    margin-top: auto; /* Push it to the bottom */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Mobile view - Hide ASCII art boxes */
 @media (max-width: 768px) {
     .ascii-box {
@@ -68,5 +111,9 @@ header {
     #app {
         width: 100%; /* Make Webamp player take full width on mobile */
         height: 40vh; /* Adjust Webamp player height for mobile */
+    }
+
+    .bottom-box {
+        width: 80%; /* Make the bottom box wider on mobile */
     }
 }

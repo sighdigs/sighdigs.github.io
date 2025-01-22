@@ -108,6 +108,11 @@ header {
         align-items: center;
     }
 
+    .highlight {
+    font-size: calc(20px + 10px); /* Increase font size by 8px */
+    font-weight: bold; /* Make the text bold */
+    }
+
     #app {
         width: 100%; /* Make Webamp player take full width on mobile */
         height: 40vh; /* Adjust Webamp player height for mobile */
@@ -115,5 +120,31 @@ header {
 
     .bottom-box {
         width: 80%; /* Make the bottom box wider on mobile */
+        padding: 10px;
+        font-size: 5px;
+        margin-top: auto; /* Push it to the bottom */
+        width: 50%;
     }
+      .subpages {
+            text-align: center;
+            margin: 20px auto;
+        }
+        
+        .subpages ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+
+        .subpages ul li {
+            margin: 10px 0; /* Space between each list item */
+        }
+
+        .subpages ul li a {
+            font-size: 18px; /* Adjust font size */
+            font-weight: bold;
+        }
+
+        .subpages ul li a:hover {
+            color: #0056b3; /* Hover color */
+        }
 }

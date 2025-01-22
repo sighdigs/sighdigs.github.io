@@ -4,7 +4,7 @@ body {
     background-size: 200px;
     background-repeat: repeat;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     text-align: center;
     display: flex;
@@ -19,7 +19,7 @@ header {
     background-color: transparent;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 60px;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Center box with message */

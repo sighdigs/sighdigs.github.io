@@ -30,8 +30,10 @@ header {
     font-size: 20px;
     max-width: calc(100% - 600px); /* Ensure the box doesn't extend beyond 70px margin on both sides */
 }
+
+/* Highlight text styling */
 .highlight {
-    font-size: calc(20px + 10px); /* Increase font size by 8px */
+    font-size: calc(20px + 10px); /* Increase font size */
     font-weight: bold; /* Make the text bold */
 }
 
@@ -63,28 +65,29 @@ header {
     height: 50vh;
 }
 
-        .subpages {
-            text-align: center;
-            margin: 20px auto;
-        }
+/* Subpages styling */
+.subpages {
+    text-align: center;
+    margin: 20px auto;
+}
 
-        .subpages ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-        }
+.subpages ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
 
-        .subpages ul li {
-            margin: 10px 0; /* Space between each list item */
-        }
+.subpages ul li {
+    margin: 10px 0; /* Space between each list item */
+}
 
-        .subpages ul li a {
-            font-size: 18px; /* Adjust font size */
-            font-weight: bold;
-        }
+.subpages ul li a {
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+}
 
-        .subpages ul li a:hover {
-            color: #0056b3; /* Hover color */
-        }
+.subpages ul li a:hover {
+    color: #0056b3; /* Hover color */
+}
 
 /* Bottom Box styling */
 .bottom-box {
@@ -97,7 +100,7 @@ header {
     margin-right: auto;
 }
 
-/* Mobile view - Hide ASCII art boxes */
+/* Mobile view adjustments */
 @media (max-width: 768px) {
     .ascii-box {
         display: none; /* Hide ASCII art boxes on mobile */
@@ -108,9 +111,10 @@ header {
         align-items: center;
     }
 
+    /* Highlight text on mobile */
     .highlight {
-    font-size: calc(20px + 10px); /* Increase font size by 8px */
-    font-weight: bold; /* Make the text bold */
+        font-size: calc(20px + 10px); /* Maintain the same font size */
+        font-weight: bold; /* Keep the text bold */
     }
 
     #app {
@@ -118,33 +122,20 @@ header {
         height: 40vh; /* Adjust Webamp player height for mobile */
     }
 
+    /* Bottom Box styling on mobile */
     .bottom-box {
         width: 80%; /* Make the bottom box wider on mobile */
         padding: 10px;
-        font-size: 5px;
-        margin-top: auto; /* Push it to the bottom */
-        width: 50%;
+        font-size: 6px; /* Increase font size for readability on mobile */
     }
-      .subpages {
-            text-align: center;
-            margin: 20px auto;
-        }
-        
-        .subpages ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-        }
 
-        .subpages ul li {
-            margin: 10px 0; /* Space between each list item */
-        }
+    /* Ensure the list styling is the same on mobile */
+    .subpages ul li a {
+        font-size: 18px; /* Adjust font size (consistent with web) */
+        font-weight: bold; /* Keep the bold styling */
+    }
 
-        .subpages ul li a {
-            font-size: 18px; /* Adjust font size */
-            font-weight: bold;
-        }
-
-        .subpages ul li a:hover {
-            color: #0056b3; /* Hover color */
-        }
+    .subpages ul li a:hover {
+        color: #0056b3; /* Hover color remains the same */
+    }
 }

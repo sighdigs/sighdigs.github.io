@@ -24,7 +24,7 @@ header {
 
 /* Center box with message */
 .center-box {
-    margin: 20px auto; /* 20px top and bottom, auto to center horizontally */
+    margin: 0px auto; /* 20px top and bottom, auto to center horizontally */
     background-color: transparent;
     font-size: 20px;
 }
@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px;
     flex-grow: 1; /* Take up remaining space */
 }
 
@@ -61,13 +61,13 @@ header {
 #app {
     width: 35%;
     height: 50vh;
-    margin-top: 10px; /* Add 10px of space above the Webamp player */
+    margin-top: 5px; /* Add 10px of space above the Webamp player */
 }
 
 /* Subpages styling */
 .subpages {
     text-align: center;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 
 .subpages ul {

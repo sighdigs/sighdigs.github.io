@@ -61,6 +61,7 @@ header {
 #app {
     width: 35%;
     height: 50vh;
+    margin-top: 10px; /* Add 10px of space above the Webamp player */
 }
 
 /* Subpages styling */
@@ -100,13 +101,18 @@ header {
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {
-    .ascii-box {
-        display: none; /* Hide ASCII art boxes on mobile */
+    /* Header margin */
+    header {
+        margin-top: 10px; /* Add 10px space from the top to the header */
     }
 
     .container {
         flex-direction: column; /* Stack elements vertically on mobile */
         align-items: center;
+    }
+
+    .ascii-box {
+        display: none; /* Hide ASCII art boxes on mobile */
     }
 
     /* Highlight text on mobile */
@@ -118,6 +124,8 @@ header {
     #app {
         width: 100%; /* Make Webamp player take full width on mobile */
         height: 40vh; /* Adjust Webamp player height for mobile */
+        order: 1; /* Move the Webamp player below the content */
+        margin-top: 30px; /* Add 30px space before the Webamp player */
     }
 
     /* Bottom Box styling on mobile */
